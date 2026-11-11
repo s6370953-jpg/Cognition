@@ -131,24 +131,16 @@
 
 .hero__team-photo {
   position: relative;
-  width: min(84%, 80rem);
-  aspect-ratio: 1.14;
-  overflow: hidden;
+  width: min(100%, 35rem);
+  aspect-ratio: 477 / 523;
 }
 
 .hero__team-image {
-  position: absolute;
-  top: 0;
-  left: 0;
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: contain;
   object-position: center;
-  /* The source PNG has transparent top padding; shift only that empty area out of view. */
-  transform: translateY(-22.37%);
-  filter: drop-shadow(0 0 1.25rem rgb(44 230 208 / 11%))
-    drop-shadow(0 0 1.75rem rgb(155 155 255 / 10%));
 }
 
 .hero__team-slogan {
@@ -166,10 +158,6 @@
   font-weight: 700;
   letter-spacing: -0.105em;
   line-height: 0.82;
-}
-
-.hero__period {
-  color: var(--color-red);
 }
 
 .hero__tagline {

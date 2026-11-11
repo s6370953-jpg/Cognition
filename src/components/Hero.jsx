@@ -54,7 +54,7 @@ function Hero() {
               THE TECH SOCIETY <span aria-hidden="true">|</span> SGGSCC
             </p>
             <h1 className="hero__title" id="hero-title">
-              INFINITY<span className="hero__period">.</span>
+              INFINITY
             </h1>
 
             <p className="hero__tagline">
@@ -101,6 +101,8 @@ function Hero() {
               className="hero__team-image"
               src="/images/infinity-team.png"
               alt="The INFINITY team together"
+              width="477"
+              height="523"
             />
           </div>
         </div>

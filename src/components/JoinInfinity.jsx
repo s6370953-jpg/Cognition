@@ -18,7 +18,7 @@ function JoinInfinity() {
 
         <div className="join-infinity__content">
           <h2 className="join-infinity__title" id="join-title">
-            JOIN THE <span>INFINITY.</span>
+            JOIN THE <span>INFINITY</span>
           </h2>
           <p className="join-infinity__description">
             Have an idea? A skill? Or simply the curiosity to explore technology
