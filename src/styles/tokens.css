@@ -1,0 +1,39 @@
+:root {
+  color-scheme: dark;
+
+  --color-background: #050505;
+  --color-surface: #101010;
+  --color-surface-raised: #181818;
+  --color-text: #f5f5f2;
+  --color-text-muted: #a3a3a3;
+  --color-border: rgb(255 255 255 / 12%);
+  --color-red: #ff3038;
+  --color-teal: #2ce6d0;
+  --color-pink: #ff4fa3;
+
+  --font-body: 'Inter', sans-serif;
+  --font-heading: 'Space Grotesk', sans-serif;
+
+  --text-xs: clamp(0.75rem, 0.72rem + 0.12vw, 0.8125rem);
+  --text-sm: clamp(0.875rem, 0.84rem + 0.15vw, 1rem);
+  --text-base: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
+  --text-lg: clamp(1.25rem, 1.12rem + 0.6vw, 1.625rem);
+  --text-xl: clamp(1.75rem, 1.4rem + 1.6vw, 2.75rem);
+  --text-display: clamp(2.75rem, 1.5rem + 5.5vw, 6.5rem);
+
+  --space-1: clamp(0.5rem, 0.46rem + 0.16vw, 0.625rem);
+  --space-2: clamp(0.75rem, 0.68rem + 0.28vw, 1rem);
+  --space-3: clamp(1rem, 0.88rem + 0.48vw, 1.5rem);
+  --space-4: clamp(1.5rem, 1.25rem + 1vw, 2.5rem);
+  --space-5: clamp(2rem, 1.5rem + 2vw, 4rem);
+  --space-6: clamp(3rem, 2rem + 4vw, 6rem);
+  --space-7: clamp(4rem, 2.5rem + 6vw, 8rem);
+
+  --container-width: 80rem;
+  --container-gutter: clamp(1.25rem, 5vw, 5rem);
+  --section-space: clamp(4rem, 8vw, 8rem);
+
+  --radius-sm: 0.25rem;
+  --radius-pill: 999px;
+  --transition-fast: 180ms ease;
+}
