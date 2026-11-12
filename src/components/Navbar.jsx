@@ -29,8 +29,13 @@ function Navbar() {
     <header className="site-header" onKeyDown={handleKeyDown}>
       <div className="site-header__inner container">
         <a className="brand" href="#home" aria-label="INFINITY home" onClick={closeMenu}>
-          <span className="brand__symbol" aria-hidden="true">∞</span>
-          <span className="brand__name">INFINITY</span>
+          <span className="brand__lockup">
+            <span className="brand__symbol" aria-hidden="true">∞</span>
+            <span className="brand__text">
+              <span className="brand__name">INFINITY</span>
+              <span className="brand__subtitle">THE TECH SOCIETY</span>
+            </span>
+          </span>
         </a>
 
         <button

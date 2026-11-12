@@ -2,10 +2,7 @@
   position: relative;
   overflow: hidden;
   border-top: 1px solid var(--color-border);
-  background:
-    radial-gradient(ellipse at 82% 28%, rgb(44 230 208 / 5%), transparent 34rem),
-    radial-gradient(ellipse at 8% 72%, rgb(155 155 255 / 5%), transparent 30rem),
-    var(--color-background);
+  background: var(--color-background);
   scroll-margin-top: 5.25rem;
 }
 
@@ -20,7 +17,7 @@
 
 .gallery__edition,
 .gallery__footer {
-  color: rgb(255 255 255 / 38%);
+  color: var(--color-text-muted);
   font-size: 0.62rem;
   font-weight: 600;
   letter-spacing: 0.15em;
@@ -78,16 +75,16 @@
 
 .gallery__filter:hover,
 .gallery__filter.is-active {
-  border-color: rgb(44 230 208 / 55%);
-  background: rgb(44 230 208 / 8%);
-  color: var(--color-text);
+  border-color: var(--color-teal);
+  background: var(--color-teal);
+  color: #ffffff;
 }
 
 .gallery__grid {
   display: grid;
   grid-auto-rows: clamp(8rem, 11vw, 10.5rem);
   grid-template-columns: repeat(12, minmax(0, 1fr));
-  gap: clamp(0.7rem, 1.5vw, 1.2rem);
+  gap: clamp(1rem, 1.75vw, 1.5rem);
 }
 
 .gallery-card {
@@ -98,7 +95,8 @@
   min-width: 0;
   overflow: hidden;
   padding: 0;
-  border: 1px solid rgb(255 255 255 / 15%);
+  border: 1px solid var(--color-border);
+  border-radius: 0.4rem;
   background: var(--color-surface);
   color: var(--color-text);
   cursor: pointer;
@@ -145,9 +143,7 @@
 .gallery-card:hover,
 .gallery-card:focus-visible {
   z-index: 1;
-  border-color: color-mix(in srgb, var(--gallery-accent) 70%, white);
-  box-shadow: 0 1.25rem 3rem rgb(0 0 0 / 45%), 0 0 1.8rem color-mix(in srgb, var(--gallery-accent) 18%, transparent);
-  transform: translateY(-4px);
+  border-color: var(--gallery-accent);
 }
 
 .gallery-card__image {
@@ -178,8 +174,8 @@
   top: 0.85rem;
   left: 0.85rem;
   padding: 0.4rem 0.55rem;
-  border: 1px solid rgb(255 255 255 / 20%);
-  background: rgb(5 5 5 / 62%);
+  border: 1px solid rgb(255 255 255 / 42%);
+  background: rgb(37 40 45 / 76%);
   color: rgb(255 255 255 / 82%);
   font-size: 0.54rem;
   font-weight: 600;
@@ -266,8 +262,7 @@
   overflow-y: auto;
   padding: clamp(1rem, 4vw, 3rem);
   place-items: center;
-  background: rgb(0 0 0 / 88%);
-  backdrop-filter: blur(12px);
+  background: rgb(37 40 45 / 80%);
   animation: gallery-preview-in 180ms ease-out both;
 }
 
@@ -299,10 +294,10 @@
   width: 2.75rem;
   aspect-ratio: 1;
   place-items: center;
-  border: 1px solid rgb(255 255 255 / 28%);
-  border-radius: 50%;
-  background: rgb(5 5 5 / 76%);
-  color: var(--color-text);
+  border: 1px solid rgb(255 255 255 / 55%);
+  border-radius: 0;
+  background: rgb(37 40 45 / 86%);
+  color: #ffffff;
   cursor: pointer;
   backdrop-filter: blur(0.5rem);
   transition:
@@ -314,7 +309,7 @@
 .gallery-preview__close:hover,
 .gallery-preview__nav:hover {
   border-color: var(--color-teal);
-  background: rgb(44 230 208 / 12%);
+  background: var(--color-teal);
 }
 
 .gallery-preview__close {
@@ -417,7 +412,7 @@
   .gallery__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-auto-rows: auto;
-    gap: var(--space-2);
+    gap: 1rem;
   }
 
   .gallery-card--feature {

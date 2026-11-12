@@ -2,9 +2,7 @@
   position: relative;
   overflow: hidden;
   border-top: 1px solid var(--color-border);
-  background:
-    radial-gradient(ellipse at 86% 38%, rgb(44 230 208 / 5%), transparent 34rem),
-    var(--color-background);
+  background: var(--color-background);
   scroll-margin-top: 5.25rem;
 }
 
@@ -19,7 +17,7 @@
 
 .achievements__edition,
 .achievements__footer {
-  color: rgb(255 255 255 / 38%);
+  color: var(--color-text-muted);
   font-size: 0.62rem;
   font-weight: 600;
   letter-spacing: 0.15em;
@@ -46,7 +44,7 @@
   display: grid;
   align-items: stretch;
   grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
-  gap: clamp(1rem, 2.4vw, 2rem);
+  gap: clamp(1.5rem, 2vw, 2rem);
 }
 
 .achievement-card {
@@ -55,7 +53,9 @@
   min-width: 0;
   overflow: hidden;
   border: 1px solid var(--color-border);
-  background: linear-gradient(145deg, rgb(255 255 255 / 3%), transparent 48%), var(--color-surface);
+  border-radius: 0.4rem;
+  background: var(--color-surface);
+  box-shadow: 0 0.35rem 1rem rgb(41 45 42 / 5%);
   transition:
     border-color 300ms ease,
     transform 400ms cubic-bezier(0.22, 1, 0.36, 1),
@@ -64,13 +64,13 @@
 
 .achievement-card:hover,
 .achievement-card:focus-within {
-  border-color: color-mix(in srgb, var(--achievement-accent) 48%, transparent);
-  box-shadow: 0 1.25rem 3rem rgb(0 0 0 / 30%), 0 0 2rem color-mix(in srgb, var(--achievement-accent) 9%, transparent);
-  transform: translateY(-4px);
+  border-color: var(--achievement-accent);
+  box-shadow: 0 0.65rem 1.4rem rgb(41 45 42 / 9%);
 }
 
 .achievement-card:nth-child(2) {
   --achievement-accent: var(--color-pink);
+  background: var(--color-surface-ice);
 }
 
 .achievement-card__open {
@@ -94,11 +94,7 @@
   aspect-ratio: 1.42;
   overflow: hidden;
   border-bottom: 1px solid var(--color-border);
-  background:
-    linear-gradient(rgb(255 255 255 / 3%) 1px, transparent 1px),
-    linear-gradient(90deg, rgb(255 255 255 / 3%) 1px, transparent 1px),
-    var(--color-background);
-  background-size: 2rem 2rem;
+  background: var(--color-surface-raised);
 }
 
 .achievement-card:nth-child(2) .achievement-card__visual {
@@ -116,7 +112,7 @@
 
 .achievement-card__image--contain {
   padding: 0.5rem;
-  background: #080808;
+  background: var(--color-surface-raised);
   object-fit: contain;
 }
 
@@ -131,9 +127,9 @@
   z-index: 1;
   display: grid;
   place-items: center;
-  border: 1px solid rgb(255 255 255 / 20%);
-  background: rgb(5 5 5 / 72%);
-  color: var(--color-text);
+  border: 1px solid rgb(255 255 255 / 55%);
+  background: rgb(37 40 45 / 76%);
+  color: #ffffff;
   backdrop-filter: blur(0.5rem);
 }
 
@@ -252,8 +248,7 @@
   overflow-y: auto;
   place-items: center;
   padding: 1.5rem;
-  background: rgb(0 0 0 / 82%);
-  backdrop-filter: blur(0.75rem);
+  background: rgb(37 40 45 / 78%);
 }
 
 .achievement-modal__dialog {
@@ -275,10 +270,10 @@
   width: 2.75rem;
   aspect-ratio: 1;
   place-items: center;
-  border: 1px solid rgb(255 255 255 / 25%);
-  border-radius: 50%;
-  background: rgb(5 5 5 / 76%);
-  color: var(--color-text);
+  border: 1px solid rgb(255 255 255 / 55%);
+  border-radius: 0;
+  background: rgb(37 40 45 / 86%);
+  color: #ffffff;
   cursor: pointer;
 }
 
@@ -287,7 +282,7 @@
   width: 100%;
   max-height: 68vh;
   object-fit: contain;
-  background: #080808;
+  background: var(--color-surface-raised);
 }
 
 .achievement-modal__caption {
@@ -295,7 +290,7 @@
 }
 
 .achievement-modal__caption > span {
-  color: var(--color-teal);
+  color: var(--color-red);
   font-size: 0.62rem;
   font-weight: 700;
   letter-spacing: 0.15em;

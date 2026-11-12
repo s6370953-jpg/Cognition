@@ -1,18 +1,21 @@
 :root {
   color-scheme: dark;
 
-  --color-background: #050505;
-  --color-surface: #101010;
-  --color-surface-raised: #181818;
-  --color-text: #f5f5f2;
-  --color-text-muted: #a3a3a3;
-  --color-border: rgb(255 255 255 / 12%);
-  --color-red: #ff3038;
-  --color-teal: #2ce6d0;
-  --color-pink: #ff4fa3;
+  --color-background: #000000;
+  --color-surface: #050505;
+  --color-surface-raised: #080808;
+  --color-surface-ice: #0a0a0a;
+  --color-surface-mint: #0c0c0c;
+  --color-text: #f5f7fa;
+  --color-text-muted: #c1c8d1;
+  --color-border: rgb(255 255 255 / 16%);
+  --color-red: #d9826b;
+  --color-teal: #247c78;
+  --color-pink: #d9826b;
+  --color-surface-terracotta: #0c0c0c;
 
-  --font-body: 'Inter', sans-serif;
-  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-heading: 'DM Serif Display', Georgia, serif;
 
   --text-xs: clamp(0.75rem, 0.72rem + 0.12vw, 0.8125rem);
   --text-sm: clamp(0.875rem, 0.84rem + 0.15vw, 1rem);

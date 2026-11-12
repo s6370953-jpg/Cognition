@@ -30,12 +30,12 @@
 }
 
 .button--primary {
-  background: var(--color-red);
-  color: var(--color-text);
+  background: var(--color-teal);
+  color: #ffffff;
 }
 
 .button--primary:hover:not(:disabled) {
-  background: #e6242c;
+  background: #1b625f;
 }
 
 .button--secondary {
@@ -45,15 +45,15 @@
 }
 
 .button--secondary:hover:not(:disabled) {
-  border-color: var(--color-text-muted);
+  border-color: var(--color-teal);
   background: var(--color-surface);
 }
 
 .button--accent {
   background: var(--color-teal);
-  color: var(--color-background);
+  color: #ffffff;
 }
 
 .button--accent:hover:not(:disabled) {
-  background: var(--color-pink);
+  background: #1b625f;
 }

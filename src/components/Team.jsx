@@ -24,12 +24,8 @@ function Team() {
       return
     }
 
-    const card = carousel.querySelector('.team-member')
-    const gap = Number.parseFloat(window.getComputedStyle(carousel).columnGap) || 0
-    const distance = card ? card.getBoundingClientRect().width + gap : carousel.clientWidth
-
     carousel.scrollBy({
-      left: direction * distance,
+      left: direction * carousel.clientWidth,
       behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches
         ? 'auto'
         : 'smooth',
